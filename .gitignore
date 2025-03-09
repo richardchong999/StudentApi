@@ -1,0 +1,28 @@
+# Ignore Visual Studio specific files
+.vs/
+*.user
+*.suo
+*.cache
+*.pdb
+*.obj
+*.log
+
+# Ignore build outputs
+bin/
+obj/
+*.dll
+*.exe
+
+# Ignore NuGet packages
+packages/
+*.nupkg
+project.lock.json
+
+# Ignore environment settings
+.env
+secrets.json
+
+# Ignore compiled and generated files
+*.generated.cs
+*.designer.cs
+*.g.cs
