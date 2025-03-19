@@ -3,6 +3,13 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
+//  TESTING HELLO WORLD
+// Console.WriteLine("Hello World!");
+// Console.ReadLine();
+
+// Set the app to listen on all IPs and port 8080 (required for OpenShift)
+// builder.WebHost.UseUrls("http://0.0.0.0:8080");
+
 // testing push and pull 2025/03/09 2:56pm
 
 // Register the StudentContext with the connection string
