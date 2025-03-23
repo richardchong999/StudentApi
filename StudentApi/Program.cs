@@ -3,12 +3,18 @@ using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
-//  TESTING StudentAPI DT:250323@10:16am
-// Console.WriteLine("Hello World!");
-// Console.ReadLine();
+// Disable HTTPS redirection
+ builder.Services.AddHttpsRedirection(options =>
+{
+    options.HttpsPort = null; // Prevent redirection
+});
+
+//  TESTING StudentAPI DT:250323@10:53am
+Console.WriteLine("Hello World!");
+Console.ReadLine();
 
 // Set the app to listen on all IPs and port 8080 (required for OpenShift)
-// builder.WebHost.UseUrls("http://0.0.0.0:8080");
+// builder.WebHost.UseUrls("https://0.0.0.0:8080");
 
 // testing push and pull 2025/03/09 2:56pm
 
